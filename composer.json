@@ -1,5 +1,5 @@
 {
-    "name": "RBech/monolog-cpsms",
+    "name": "rbech/monolog-cpsms",
     "description": "Sends your logs via SMS using the cpsms.dk gateway",
     "license": "MIT",
     "authors": [
