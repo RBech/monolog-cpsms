@@ -1,0 +1,21 @@
+{
+    "name": "RBech/monolog-cpsms",
+    "description": "Sends your logs via SMS using the cpsms.dk gateway",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "RBech",
+            "email": "me@rbech.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "lib-curl": "*",
+        "monolog/monolog": "@stable"
+    },
+    "autoload": {
+        "psr-4": {
+            "Monolog\\": "src/Monolog"
+        }
+    }
+}
