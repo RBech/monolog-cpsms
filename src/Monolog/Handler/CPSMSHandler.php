@@ -3,6 +3,7 @@ namespace Monolog\Handler;
 
 use Monolog\Logger;
 use Monolog\Handler\MailHandler;
+use Monolog\Formatter\LineFormatter;
 
 /**
  * CPSMS (https://www.cpsms.dk) log handler.
@@ -58,5 +59,13 @@ class CPSMSHandler extends MailHandler
         curl_exec($ch);
 
         curl_close($ch);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    protected function getDefaultFormatter()
+    {
+        return new LineFormatter(null, null, false, true);
     }
 }
